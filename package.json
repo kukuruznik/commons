@@ -1,0 +1,25 @@
+{
+  "name": "commons",
+  "version": "0.0.1",
+  "description": "Generic stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kukuruznik/commons"
+  },
+  "author": "Kukuruznik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kukuruznik/common/issues"
+  },
+  "homepage": "https://github.com/kukuruznik/common",
+  "devDependencies": {
+    "chai": "^3.0.0"
+  },
+  "dependencies": {
+    "baconjs": "^0.7.64"
+  }
+}
