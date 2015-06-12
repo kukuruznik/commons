@@ -13,9 +13,9 @@
   "author": "Kukuruznik",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kukuruznik/common/issues"
+    "url": "https://github.com/kukuruznik/commons/issues"
   },
-  "homepage": "https://github.com/kukuruznik/common",
+  "homepage": "https://github.com/kukuruznik/commons",
   "devDependencies": {
     "chai": "^3.0.0"
   },
