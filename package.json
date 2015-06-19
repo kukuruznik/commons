@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/kukuruznik/commons",
   "devDependencies": {
-    "chai": "^3.0.0"
+    "chai": "^3.0.0",
+    "stately.js": "^1.2.0"
   },
   "dependencies": {
     "baconjs": "^0.7.64"

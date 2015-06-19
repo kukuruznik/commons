@@ -1,8 +1,7 @@
 /* global describe, it */
 var
 	should = require("chai").should(),
-	commons = require("commons"),
-	asyncUtils = commons.async;
+	asyncUtils = require("../parts/async");
 
 describe("async.schedule()", function() {
 	it("runs a function after a given time period", function(done) {

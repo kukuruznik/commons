@@ -1,7 +1,7 @@
 /* global describe, it, beforeEach */
 var
 	should = require("chai").should(),
-	commons = require("commons"),
+	streamUtils = require("../parts/stream"),
 	Stately = require("stately.js"),
 	doorStates = {
 		CLOSED: {
@@ -14,8 +14,7 @@ var
 		LOCKED: {
 			unlock: "CLOSED"
 		}
-	},
-	streamUtils = commons.stream;
+	};
 
 describe("stream.fsm2stream() binds an event-stream to a Stately.js FSM and", function() {
 	it("fires 3 events (in the correct order) whenever the FSM changes state", function(done) {

@@ -1,8 +1,7 @@
 /* global describe, it */
 var
 	should = require("chai").should(),
-	commons = require("commons"),
-	funcUtils = commons.func;
+	funcUtils = require("../parts/func");
 
 describe("func.ifThenElse() returns a function that", function() {
 	it("runs whenTrue if the predicate returns true", function() {

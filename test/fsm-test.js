@@ -1,7 +1,7 @@
 /* global describe, it, beforeEach */
 var
 	should = require("chai").should(),
-	commons = require("commons"),
+	fsm = require("../parts/fsm"),
 	Stately = require("stately.js"),
 	doorStates = {
 		CLOSED: {
@@ -14,12 +14,11 @@ var
 		LOCKED: {
 			unlock: "CLOSED"
 		}
-	},
-	openRatherThanLock = function(yes) {
-		return yes ? "open" : "lock";
-	},
+	};
 
-	fsm = commons.fsm;
+function openRatherThanLock(yes) {
+	return yes ? "open" : "lock";
+};
 
 describe("fsm.fromStatelyMachine() wraps a Stately.js FSM and", function() {
 	var
@@ -39,7 +38,7 @@ describe("fsm.fromStatelyMachine() wraps a Stately.js FSM and", function() {
 			transition();
 			door.getMachineState().should.equal("OPENED");
 		});
-	
+
 		it("has no effect when isn't available from the current state", function() {
 			var
 				transition = wrappedDoor.getRawFunction("unlock");
@@ -64,7 +63,7 @@ describe("fsm.fromStatelyMachine() wraps a Stately.js FSM and", function() {
 			door.getMachineState().should.equal("OPENED");
 			should.equal(retVal, true);
 		});
-	
+
 		it("has no effect when isn't available from the current state and returns false", function() {
 			var
 				transition = wrappedDoor.getWrappedFunction("unlock");
@@ -151,7 +150,7 @@ describe("fsm.fromStatelyMachine() wraps a Stately.js FSM and", function() {
 			var
 				dispatcher = wrappedDoor.getBooleanDispatcherFunction("notA", "-ValidEvent");
 
-				dispatcher.should.throw(Error);
+			dispatcher.should.throw(Error);
 		});
 	});
 });
