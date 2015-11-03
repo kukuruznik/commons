@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kukuruznik/commons",
   "devDependencies": {
+    "mocha": "^2.3.3",
     "chai": "^3.0.0",
     "stately.js": "^1.2.0"
   },
