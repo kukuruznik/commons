@@ -1,2 +1,3 @@
-# commons [![Build Status][travis-image]][travis-url]
+# commons [![Build Status](https://secure.travis-ci.org/kukuruznik/commons.png)](https://secure.travis-ci.org/kukuruznik/commons.png)
+
 Just playing around...
